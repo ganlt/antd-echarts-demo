@@ -111,29 +111,10 @@ export default {
               authority: ['admin'],
             },
             {
-              path: '/charts',
-              name: '图表',
+              path: '/chart',
+              name: 'chart',
               icon: 'area-chart',
-              routes: [
-                {
-                  name: '折线图',
-                  path: '/charts/line',
-                  icon: 'line-chart',
-                  component: '../pages/charts/Line'
-                },
-                {
-                  name: '柱状图',
-                  path: '/charts/bar',
-                  icon: 'bar-chart',
-                  component: '../pages/charts/Bar'
-                },
-                {
-                  name: '饼状图',
-                  path: '/charts/pie',
-                  icon: 'pie-chart',
-                  component: '../pages/charts/Pie'
-                },
-              ]
+              component: './chart/Chart',
             },
             {
               component: './404',
